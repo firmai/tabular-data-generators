@@ -2,11 +2,10 @@
 
 
 ## Time-Series
-[MTSS-GAN] - Multivariate conditional time series simulation using stacked generative adversarial learning for multi-attribute generation.
+[MTSS-GAN](https://github.com/firmai/mtss-gan) - Multivariate conditional time series simulation using stacked generative adversarial learning for multi-attribute generation.
   > Developed by Derek Snow @firmai
-[Time-GAN]( - Multivariate time series generation with an emphasis on autoregression errors to preserve temporal correlations.
-  > Developed by Jinsung Yoon, Daniel Jarrett, Mihaela van der Schaar, forked code hosted by @firmai
-
+[Time-GAN](https://github.com/firmai/tsgan/tree/master/alg/timegan) - Multivariate time series generation with an emphasis on autoregression errors to preserve temporal correlations.
+  > Developed by Jinsung Yoon, Daniel Jarrett, Mihaela van der Schaar, forked code and colab hosted by @firmai
 
 
 ## Cross-Sectional
@@ -27,4 +26,8 @@ CTGAN
 TVAE
 Uniform
 VEEGAN
+
+### Other
+
+[Evaluation](https://github.com/Baukebrenninkmeijer/On-the-Generation-and-Evaluation-of-Synthetic-Tabular-Data-using-GANs) - A range of implementation and evaluation metrics as part of a masters thesis by Bauke Brenninkmeijer.
 
