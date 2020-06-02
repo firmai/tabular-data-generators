@@ -4,6 +4,7 @@
 ## Time-Series
 [MTSS-GAN](https://github.com/firmai/mtss-gan) - Multivariate conditional time series simulation using stacked generative adversarial learning for multi-attribute generation.
   > Developed by Derek Snow @firmai
+  
 [Time-GAN](https://github.com/firmai/tsgan/tree/master/alg/timegan) - Multivariate time series generation with an emphasis on autoregression errors to preserve temporal correlations.
   > Developed by Jinsung Yoon, Daniel Jarrett, Mihaela van der Schaar, forked code and colab hosted by @firmai
 
