@@ -7,6 +7,8 @@
   
 [Time-GAN](https://github.com/firmai/tsgan/tree/master/alg/timegan) - Multivariate time series generation with an emphasis on autoregression errors to preserve temporal correlations.
   > Developed by Jinsung Yoon, Daniel Jarrett, Mihaela van der Schaar, forked code and colab hosted by @firmai
+  
+[DoppleGANger](https://github.com/fjxmlzn/DoppelGANger) - Modelling time series and mixed-type data
 
 
 ## Cross-Sectional
@@ -25,7 +27,7 @@
 
 Tabular data usually contains a mix of discrete and continuous columns. Continuous columns may have multiple modes whereas discrete columns are sometimes imbalanced making the modeling difficult. Existing statistical and deep neural network models fail to properly model this type of data. We design TGAN, which uses a conditional generative adversarial network to address these challenges. In CTGAN, we invent the ```mode-specific normalization``` (In CTGAN, we use variational Gaussian mixture model (VGM) to normalize continuous columns 25% improvement) to overcome the non-Gaussian and multimodal distribution (Section 4.2). We design a ```conditional generator``` (imbalanced data; 20% improvent) and ```training-by-sampling``` (conditional loss) to deal with the imbalanced discrete columns (Section 4.3). Ablation study necessary. They use  WGANGP. The identity (original data) always had the best performance. 
 
-[TVAE] - Variational autoencoder (VAE) for mixed-type tabular data generation. VAEs directly use data to build the generator;
+TVAE (Same Paper as CTGAN) - Variational autoencoder (VAE) for mixed-type tabular data generation. VAEs directly use data to build the generator;
 
 ###### TVAE:
 Benefit here is that no conditioning is used for imbalanced data and this model still performs at a similar level to CTGAN above. On real datasets,TVAE and CTGAN outperform CLBN and PrivBN, whereas other GAN models cannot get as good a result as Bayesian networks. 
@@ -46,8 +48,6 @@ For simulated data from Gaussian mixture,CLBNandPrivBNsuffer because continuousn
 ###### CTGAN:
 
 A GAN variant that avoids mode collapse. Create a reconstruction network to map the data distribution to a Gaussian, but also to approximately reverse the action of the generator.  Intuitively, if the reconstructor learns both to map all of the true data to the noise distribution and is an approximate inverse of the generator network, this will encourage the generator network to map from the noise distribution to the entirety of the true data distribution, thus resolving mode collapse. There was a previous [iteration](https://arxiv.org/pdf/1811.11264.pdf) that did not use conditional GANS. 
-
-
 
 
 ### Other
